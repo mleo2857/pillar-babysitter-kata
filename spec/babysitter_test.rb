@@ -4,7 +4,7 @@ require 'minitest/spec'
 require '../lib/babysitter'
 
 describe Babysitter do
-  subject {Babysitter.new}
+  subject {Babysitter.new 'Julie'}
 
   it 'must be an must be an instance of babysitter' do
     subject.must_be_instance_of Babysitter
@@ -15,7 +15,7 @@ describe Babysitter do
   end
 
   it 'must initialize with a name' do
-    babysitter = new Babysitter 'Sarah'
+    babysitter = Babysitter.new 'Sarah'
     babysitter.name.must_equal 'Sarah'
   end
 end
