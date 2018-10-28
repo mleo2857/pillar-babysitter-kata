@@ -27,4 +27,15 @@ describe Babysitter do
     subject.joblog.must_be_instance_of Hash
     subject.joblog.must_be_empty
   end
+
+  describe '#addJob' do
+    before do
+      @babysitter = Babysitter.new 'Laurie'
+    end
+
+    it 'responds to the add job method' do
+      @babysitter.must_respond_to 'addJob'
+    end
+  end
+
 end
