@@ -13,4 +13,9 @@ describe Babysitter do
   it 'must have a name' do
     subject.must_respond_to 'name'
   end
+
+  it 'must initialize with a name' do
+    babysitter = new Babysitter 'Sarah'
+    babysitter.name.must_equal 'Sarah'
+  end
 end
