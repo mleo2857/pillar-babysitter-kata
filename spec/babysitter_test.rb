@@ -41,6 +41,12 @@ describe Babysitter do
       @babysitter.addJob '10/27/18'
       @babysitter.joblog.must_include '10/27/18'
     end
+
+    it 'should check if babysitter already has a job that date' do
+      @babysitter.addJob '10/28/18'
+      @babysitter.addJob('10/28/18').must_equal @babysitter.name + 'is busy that night'
+    end
+
   end
 
 end
