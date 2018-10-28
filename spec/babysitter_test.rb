@@ -36,6 +36,11 @@ describe Babysitter do
     it 'responds to the add job method' do
       @babysitter.must_respond_to 'addJob'
     end
+
+    it 'records the date of the job in the joblog' do
+      @babysitter.addJob '10/27/18'
+      @babysitter.joblog.must_include '10/27/18'
+    end
   end
 
 end
