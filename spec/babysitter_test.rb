@@ -22,4 +22,9 @@ describe Babysitter do
   it 'should keep track of babysitting jobs' do
     subject.must_respond_to 'joblog'
   end
+
+  it 'must have an empty hash of jobs' do
+    subject.joblog.must_be_instance_of Hash
+    subject.joblog.must_be_empty
+  end
 end
