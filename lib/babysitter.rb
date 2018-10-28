@@ -9,9 +9,10 @@ class Babysitter
   def addJob date
     if @joblog.include?(date)
       return @name + ' is busy that night'
-    else
-      @joblog[date] = {}
     end
+
+    @joblog[date] = {}
+
   end
 
 end
