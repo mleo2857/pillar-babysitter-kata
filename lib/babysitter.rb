@@ -6,7 +6,9 @@ class Babysitter
     @joblog = {}
   end
 
-  def addJob
+  def addJob date
+    @jobdate = date
+    @joblog[@jobdate] = {}
   end
-  
+
 end
