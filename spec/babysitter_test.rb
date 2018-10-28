@@ -18,4 +18,8 @@ describe Babysitter do
     babysitter = Babysitter.new 'Sarah'
     babysitter.name.must_equal 'Sarah'
   end
+
+  it 'should keep track of babysitting jobs' do
+    subject.must_respond_to 'joblog'
+  end
 end
