@@ -44,7 +44,7 @@ describe Babysitter do
 
     it 'should check if babysitter already has a job that date' do
       @babysitter.addJob '10/28/18'
-      @babysitter.addJob('10/28/18').must_equal @babysitter.name + 'is busy that night'
+      @babysitter.addJob('10/28/18').must_equal @babysitter.name + ' is busy that night'
     end
 
   end
