@@ -3,5 +3,6 @@ class Babysitter
 
   def initialize name
     @name = name
+    @joblog = {}
   end
 end
