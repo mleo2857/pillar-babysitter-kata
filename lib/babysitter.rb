@@ -5,4 +5,8 @@ class Babysitter
     @name = name
     @joblog = {}
   end
+
+  def addJob
+  end
+  
 end
