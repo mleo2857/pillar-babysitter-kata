@@ -38,6 +38,7 @@ describe Babysitter do
     end
 
     it 'records the date of the job and creates an entry in joblog' do
+      @babysitter.addJob('not a date').must_equal 'invalid input, please enter a date'
       @babysitter.addJob '10/27/18'
       @babysitter.joblog.must_include '10/27/18'
     end
